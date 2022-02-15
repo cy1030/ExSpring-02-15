@@ -1,0 +1,12 @@
+package com.marobiana.ex.lesson01;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class Ex01Controllerr {
+	
+	public String printString() {
+		return "예제 1번 문자열을 response 에 출력한다.";
+	}
+	
+}

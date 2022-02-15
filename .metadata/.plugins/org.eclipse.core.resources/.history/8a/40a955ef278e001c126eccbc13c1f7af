@@ -1,0 +1,14 @@
+package com.marobiana.ex.lesson01;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class Ex01Controllerr {
+	
+	@RequestMapping("/lesson01/ex01/1")
+	public String printString() {
+		return "예제 1번 문자열을 response 에 출력한다.";
+	}
+	
+}

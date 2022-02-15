@@ -1,0 +1,29 @@
+package com.marobiana.ex.lesson01;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class Ex01Controllerr {
+	
+	@RequestMapping("/lesson01/ex01/1")
+	@ResponseBody
+	public String printString() {
+		return "예제 1번 문자열을 response 에 출력한다.";
+	}
+	
+	@RequestMapping("/lesson01/ex01/2")
+	@ResponseBody
+	public Map<String, Object>printMap(){
+		Map<String, Object> map = new HashMap<>();
+		// 과일 이름과 가격
+		map.put("apple", 1500);
+		map.put("orange", 1000);
+		map.put("banan", 5000);
+	}
+	
+	
+}

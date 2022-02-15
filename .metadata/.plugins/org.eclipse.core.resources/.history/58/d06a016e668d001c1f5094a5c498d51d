@@ -1,0 +1,10 @@
+package com.hagulu.ex.hello;
+
+@Controller
+public class HelloController {
+    @ResponseBody
+    @RequestMapping("/hello")
+    public String helloWorld() {
+        return "Hello World!!";
+    }
+}

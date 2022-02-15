@@ -1,0 +1,5 @@
+package com.marobiana.ex.lesson01.model;
+
+public class Person {
+
+}
